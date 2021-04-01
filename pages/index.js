@@ -6,6 +6,20 @@ function CapsLock(props){
     return <div>{textoEmCapsLock}</div>
 }
 
+function Programa(){
+    const [valor, setValor] = useState("teste")
+    function mudarValor(){
+        setValor("Esse valor foi alterado")
+    }
+    
+    return(
+        <div className="ProgramaTeste">
+            <div>{valor}</div>
+            <button onClick={mudarValor}>Muda valor</button>
+        </div>
+    )
+}
+
 
 function Contador(){
     const [contador, setContador] = useState(1)
@@ -26,6 +40,7 @@ function Home(){
         <div className="TelaPrincipal">
             <h3 style={{textAlign:"center"}}>Teste</h3>
             <CapsLock>Teste Carlos</CapsLock>
+            <Programa/>
             <Contador/>
             <CapsLock>Seja feliz</CapsLock>
         </div>
