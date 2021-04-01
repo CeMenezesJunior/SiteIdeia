@@ -1,8 +1,13 @@
 import { useState } from "react";
+
 function CapsLock(props){
     const textoInserido = props.children;
     const textoEmCapsLock = textoInserido.toUpperCase();
     return <div>{textoEmCapsLock}</div>
+}
+
+function Programa(){
+   
 }
 
 function Contador(){
@@ -21,8 +26,10 @@ function Contador(){
 
 function Home(){
     return (
-        <div>
-            <Contador/>
+        <div className="TelaPrincipal">
+            <h3 style={{textAlign:"center"}}>Teste</h3>
+            <CapsLock>Teste Carlos</CapsLock>
+            <Programa/>
             <CapsLock>Seja feliz</CapsLock>
         </div>
     )
