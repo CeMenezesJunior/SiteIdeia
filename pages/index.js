@@ -1,50 +1,55 @@
 import { useState } from "react";
+import Link from "next/link"
 
-function CapsLock(props){
-    const textoInserido = props.children;
-    const textoEmCapsLock = textoInserido.toUpperCase();
-    return <div>{textoEmCapsLock}</div>
+function Title(props){
+    return <h1 style={{fontSize:"50px",color:"blue"}}>{props.children}</h1>
 }
 
-function Programa(){
-    const [valor, setValor] = useState("teste")
-    function mudarValor(){
-        setValor("Esse valor foi alterado")
-    }
-    
-    return(
-        <div className="ProgramaTeste">
-            <div>{valor}</div>
-            <button onClick={mudarValor}>Muda valor</button>
-        </div>
-    )
-}
-
-
-function Contador(){
-    const [contador, setContador] = useState(1)
-    function adicionarContador(){
-        setContador(contador + 1);
-        console.log("Adicionou");
-    }
+export default function Home(props){
     return(
         <div>
-            <div>{contador}</div>
-            <button onClick={adicionarContador}>Adiciona</button>
+            <header className="headerContainer">
+                <img src={props.avatar_url}/>
+                <Link href="/sobre">
+                    <a>
+                        <h1>Meu blog</h1>
+                    </a>
+                </Link>
+            </header>
+
+            <section className="postsContainer">
+                <h2>Repositórios Favoritos</h2>
+                {
+                    props.repos.map((project)=>{
+                        return(
+                            <article className="postContainer__post">
+                                <a href="/">
+                                    {project.repo}
+                                </a>
+                                <p>
+                                    {project.description}
+                                </p>
+                            </article>
+                        )
+                        })
+                }
+            </section>
         </div>
     )
 }
 
-function Home(){
-    return (
-        <div className="TelaPrincipal">
-            <h3 style={{textAlign:"center"}}>Teste</h3>
-            <CapsLock>Teste Carlos</CapsLock>
-            <Programa/>
-            <Contador/>
-            <CapsLock>Seja feliz</CapsLock>
-        </div>
-    )
-}
+export async function getStaticProps(){
 
-export default Home
+    const githubResponse = await fetch('https://api.github.com/users/carloseduardo1995')
+        .then(res=>res.json())
+
+    const repos = await fetch('https://gh-pinned-repos.now.sh/?username=carloseduardo1995')
+        .then(res=>res.json())
+
+    return{
+        props: {
+            avatar_url: githubResponse.avatar_url,
+            repos,
+        }
+    }
+}
