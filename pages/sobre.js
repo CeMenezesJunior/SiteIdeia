@@ -9,7 +9,7 @@ export default function Sobre(){
         <div>
             <header>
                 <Title>
-                    Pagina sobre 
+                    Pagina sobre
                 </Title>
             </header>
             <Link href="/">
