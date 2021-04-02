@@ -4,24 +4,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
-function Title(props){
-    return <h1 style={{fontSize:"50px",color:"blue"}}>{props.children}</h1>
-}
 
 export default function Home(props){
     return(
         <div>
             <header className="headerContainer">
                 <img src={props.avatar_url}/>
-                <Link href="/sobre">
-                    <a>
-                        <p style={{color:"#ff6a00;"}}>Sobre mim</p>
-                    </a>
-                </Link>
+                <div>
+                    <h3>Carlos Eduardo Menezes Junior</h3>
+                    <Link href="/sobre">
+                        <a>
+                            <p style={{color:"red"}}>Sobre mim</p>
+                        </a>
+                    </Link>
+                </div>
+                
             </header>
+            
 
             <section className="postsContainer">
-                <h2>Repositórios Favoritos</h2>
+                <h4>Repositórios Favoritos</h4>
                 {
                     props.repos.map((project)=>{
                         return(
@@ -37,18 +39,7 @@ export default function Home(props){
                         })
                 }
             </section>
-            <div className="linkContainer">
-                    <Link href="https://github.com/carloseduardo1995">
-                        <a>
-                             <FontAwesomeIcon style={{fontSize:"35px"}} icon={faGithub}></FontAwesomeIcon>
-                        </a>
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/cemenezesJunior">
-                        <a>
-                             <FontAwesomeIcon style={{fontSize:"35px"}} icon={faLinkedin}></FontAwesomeIcon>
-                        </a>
-                    </Link>
-            </div>
+           
         </div>
     )
 }

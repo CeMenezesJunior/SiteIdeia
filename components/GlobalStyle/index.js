@@ -2,7 +2,7 @@ import{createGlobalStyle} from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --primary: #ff6a00;
+    --primary: #8be9fd;
   }
   * {
     font-family: sans-serif;
@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   a {
-    color: var(--primary);
+    color: red;
   }
   button,
   a {
@@ -43,6 +43,9 @@ const GlobalStyle = createGlobalStyle`
     a {
       font-weight: bold;
       text-decoration: none;
+    }
+    p{
+      color: #8be9fd;
     }
   }
   .headerContainer {
@@ -66,6 +69,9 @@ const GlobalStyle = createGlobalStyle`
     a{
       margin-right: 15px;
     }
+  }
+  .lugarVazio{
+    height: 500px;
   }
 `;
 

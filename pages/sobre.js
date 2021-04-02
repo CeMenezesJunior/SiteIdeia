@@ -17,6 +17,9 @@ export default function Sobre(){
                     Link para a home
                 </a>
             </Link>
+            <div className="lugarVazio">
+                
+            </div>
             
         </div>
 
