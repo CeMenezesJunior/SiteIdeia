@@ -52,12 +52,19 @@ const GlobalStyle = createGlobalStyle`
     padding-bottom: 16px;
     margin-bottom: 32px;
     img {
-      max-width: 50px;
+      max-width: 100px;
       border-radius: 100%;
       margin-right: 16px;
     }
     h1 {
       margin: 0;
+    }
+  }
+  .linkContainer{
+    display: flex;
+    align-items: center;
+    a{
+      margin-right: 15px;
     }
   }
 `;
