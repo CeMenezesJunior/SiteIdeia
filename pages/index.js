@@ -9,7 +9,7 @@ export default function Home(props){
     return(
         <div>
             <header className="headerContainer">
-                <img src={props.avatar_url}/>
+                <img src="https://avatars.githubusercontent.com/u/46033513?v=4"/>
                 <div>
                     <h3>Carlos Eduardo Menezes Junior</h3>
                     <Link href="/sobre">
@@ -48,15 +48,11 @@ export default function Home(props){
 
 export async function getStaticProps(){
 
-    const githubResponse = await fetch('https://api.github.com/users/carloseduardo1995')
-        .then(res=>res.json())
-
     const repos = await fetch('https://gh-pinned-repos.now.sh/?username=carloseduardo1995')
         .then(res=>res.json())
 
     return{
         props: {
-            avatar_url: githubResponse.avatar_url,
             repos,
         }
     }
