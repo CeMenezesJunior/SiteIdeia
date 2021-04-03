@@ -48,7 +48,7 @@ export default function Home(props){
 
 export async function getStaticProps(){
 
-    const repos = await fetch('https://gh-pinned-repos.now.sh/?username=carloseduardo1995')
+    const repos = await fetch('https://gh-pinned-repos.now.sh/?username=CeMenezesJunior')
         .then(res=>res.json())
 
     return{

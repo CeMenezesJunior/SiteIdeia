@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carloseduardo1995/SiteIdeia.git"
+    "url": "git+https://github.com/CeMenezesJunior/SiteIdeia.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/carloseduardo1995/SiteIdeia/issues"
+    "url": "https://github.com/CeMenezesJunior/SiteIdeia/issues"
   },
-  "homepage": "https://github.com/carloseduardo1995/SiteIdeia#readme",
+  "homepage": "https://github.com/CeMenezesJunior/SiteIdeia#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
@@ -24,7 +24,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^5.0.0-beta3",
     "nex": "^2.0.22",
-    "next": "^10.1.2",
+    "next": "^10.1.3",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
