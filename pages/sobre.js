@@ -1,8 +1,13 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Sobre(){
     return(
         <div>
+            <Head>
+                <title>Sobre mim</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
             <div style={{marginLeft:"20px"}}>
                 <h1>
                     Página sobre mim

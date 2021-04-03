@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
-import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import Head from "next/head";
 
 
 export default function Home(props){
     return(
         <div>
+            <Head>
+                <title>Carlos Eduardo Menezes Junior</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
             <header className="headerContainer">
                 <img src="https://avatars.githubusercontent.com/u/46033513?v=4"/>
                 <div>
