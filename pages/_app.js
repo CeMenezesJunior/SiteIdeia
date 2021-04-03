@@ -25,7 +25,7 @@ export default class MyApp extends App{
                 <GlobalStyle/>
                 <Component {...pageProps} />
                 <div className="linkContainer footer">
-                    <Link href="https://github.com/carloseduardo1995">
+                    <Link href="https://github.com/CeMenezesJunior">
                         <a>
                              <FontAwesomeIcon style={{fontSize:"35px"}} icon={faGithub}></FontAwesomeIcon>
                         </a>

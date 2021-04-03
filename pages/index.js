@@ -28,7 +28,7 @@ export default function Home(props){
                         props.repos.map((project)=>{
                             return(
                                 <article className="postsContainer__post">
-                                    <a href={"https://github.com/carloseduardo1995/"+project.repo}>
+                                    <a href={"https://github.com/CeMenezesJunior/"+project.repo}>
                                         {project.repo}
                                     </a>
                                     <p>
