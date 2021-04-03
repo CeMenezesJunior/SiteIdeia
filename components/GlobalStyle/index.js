@@ -2,12 +2,11 @@ import{createGlobalStyle} from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --primary: #8be9fd;
+    --primary: #ff5555;
   }
   * {
     font-family: sans-serif;
     color: #333;
-    box-sizing: border-box;
   }
   
   html,
@@ -16,10 +15,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   body {
-    padding-left: 16px;
-    padding-right: 16px;
-    max-width: 700px;
-    margin: auto;
+    background-color: #282a36;
   }
   h1,
   h2,
@@ -27,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   a {
-    color: red;
+    color: #ff5555;
   }
   button,
   a {
@@ -37,18 +33,32 @@ const GlobalStyle = createGlobalStyle`
       opacity: .5;
     }
   }
+  p{
+    color: #f8f8f2;
+  }
   .postsContainer {
   }
   .postsContainer__post {
     a {
       font-weight: bold;
-      text-decoration: none;
     }
     p{
-      color: #8be9fd;
+      color: #f8f8f2;
+      margin-bottom: 20px;
     }
   }
+  .biografia{
+    margin-bottom: 110px;
+    margin-left: 20px;
+  }
+  .conteudos{
+    display: flex;
+    margin-bottom: 110px;
+    margin-left: 20px;
+  }
   .headerContainer {
+    position: relative;
+    margin-left: 35%;
     display: flex;
     align-items: center;
     padding-top: 16px;
@@ -65,13 +75,23 @@ const GlobalStyle = createGlobalStyle`
   }
   .linkContainer{
     display: flex;
-    align-items: center;
+    
     a{
+      position: relative;
+      left: 45%;
       margin-right: 15px;
     }
   }
   .lugarVazio{
     height: 500px;
+  }
+  .footer{
+    align-items: center;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
   }
 `;
 

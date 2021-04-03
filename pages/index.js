@@ -13,32 +13,34 @@ export default function Home(props){
                 <div>
                     <h3>Carlos Eduardo Menezes Junior</h3>
                     <Link href="/sobre">
-                        <a>
-                            <p style={{color:"red"}}>Sobre mim</p>
+                        <a style={{fontWeight:"bold"}}>
+                            Sobre mim
                         </a>
                     </Link>
                 </div>
                 
             </header>
             
-
-            <section className="postsContainer">
-                <h4>Repositórios Favoritos</h4>
-                {
-                    props.repos.map((project)=>{
-                        return(
-                            <article className="postContainer__post">
-                                <a href="/">
-                                    {project.repo}
-                                </a>
-                                <p>
-                                    {project.description}
-                                </p>
-                            </article>
-                        )
-                        })
-                }
-            </section>
+            <div className="conteudos">
+                <div className="postsContainer">
+                    <h4>Meus Repositórios Favoritos</h4>
+                    {
+                        props.repos.map((project)=>{
+                            return(
+                                <article className="postsContainer__post">
+                                    <a href={"https://github.com/carloseduardo1995/"+project.repo}>
+                                        {project.repo}
+                                    </a>
+                                    <p>
+                                        {project.description}
+                                    </p>
+                                </article>
+                            )
+                            })
+                    }
+                </div>
+                
+            </div>
            
         </div>
     )
