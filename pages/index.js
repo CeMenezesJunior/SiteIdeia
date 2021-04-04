@@ -33,7 +33,7 @@ export default function Home(props){
                         - Estudante do curso de ciencia da computação da <a href="http://www.uff.br/">UFF</a><br/>
                         - 10 meses de trabalho com o framework para desenvolvimento móvel <a href="https://dotnet.microsoft.com/apps/xamarin/xamarin-forms">Xamarin Forms</a> <br/>
                         - {calculaTempoSys()} meses de experiência com o desenvolvimento Outsystems<br/>
-                        - Certificação Rective Developer Web que pode ser conferida <a href="/">Aqui</a>
+                        - Certificação Rective Developer Web que pode ser conferida <a href="./certificado.pdf">Aqui</a>
                     </p>
                 </div>
                 <div className="postsContainer">
