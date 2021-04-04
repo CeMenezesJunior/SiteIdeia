@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import YoutubeEmbed from '../components/YoutubeEmbed/YoutubeEmbed'
 
 export default function Sobre(){
     return(
@@ -33,6 +34,8 @@ export default function Sobre(){
 
             </p>
             
+            <YoutubeEmbed embedId="UelDrZ1aFeY"/>
+
         </div>
 
        

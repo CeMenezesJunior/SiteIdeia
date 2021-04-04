@@ -73,6 +73,11 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
     }
   }
+  .imagemPerfil{
+    max-width: 100px;
+    border-radius: 100%;
+    margin-right: 16px;
+  }
   .linkContainer{
     display: flex;
     
@@ -92,6 +97,19 @@ const GlobalStyle = createGlobalStyle`
     left: 0;
     width: 100%;
     height: 100px;
+  }
+  .video-responsive{
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    height: 0;
+  }
+  .video-responsive iframe{
+    left: 22%;
+    top: 0;
+    height: 100;
+    weight: 100%;
+    position: absolute;
   }
 `;
 

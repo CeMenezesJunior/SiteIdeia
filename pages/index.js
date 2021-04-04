@@ -11,7 +11,9 @@ export default function Home(props){
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <header className="headerContainer">
-                <img src="https://avatars.githubusercontent.com/u/46033513?v=4"/>
+                <img
+                    src="https://avatars.githubusercontent.com/u/46033513?v=4"
+                />
                 <div>
                     <h3>Carlos Eduardo Menezes Junior</h3>
                     <Link href="/sobre">
