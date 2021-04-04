@@ -56,6 +56,9 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 110px;
     margin-left: 20px;
   }
+  .descricao{
+    margin-right: 20px;
+  }
   .headerContainer {
     position: relative;
     margin-left: 35%;

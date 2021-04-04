@@ -26,6 +26,16 @@ export default function Home(props){
             </header>
             
             <div className="conteudos">
+                <div className="descricao">
+                    <h4>Descrição</h4>
+                    <p>
+                        - Idade: {calculaIdade()} anos<br/>
+                        - Estudante do curso de ciencia da computação da <a href="http://www.uff.br/">UFF</a><br/>
+                        - 10 meses de trabalho com o framework para desenvolvimento móvel <a href="https://dotnet.microsoft.com/apps/xamarin/xamarin-forms">Xamarin Forms</a> <br/>
+                        - {calculaTempoSys()} meses de experiência com o desenvolvimento Outsystems<br/>
+                        - Certificação Rective Developer Web que pode ser conferida <a href="/">Aqui</a>
+                    </p>
+                </div>
                 <div className="postsContainer">
                     <h4>Meus Repositórios Favoritos</h4>
                     {
@@ -48,6 +58,20 @@ export default function Home(props){
            
         </div>
     )
+}
+
+export function calculaIdade(){
+    var nascimento = new Date("1995-07-07T00:00:00");
+    var diffIdade = Date.now() - nascimento.getTime();
+    var Idade = new Date(diffIdade);
+    return Math.abs(Idade.getUTCFullYear()-1970);
+}
+
+export function calculaTempoSys(){
+    var contratado = new Date("2020-11-02T00:00:00");
+    var diffTempo = Date.now() - contratado.getTime();
+    var meses = new Date(diffTempo);
+    return meses.getUTCMonth();
 }
 
 export async function getStaticProps(){
