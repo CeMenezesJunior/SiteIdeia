@@ -16,6 +16,7 @@ export default function Home(props){
                 />
                 <div>
                     <h3>Carlos Eduardo Menezes Junior</h3>
+                    <h4 style={{marginLeft:"85px"}}>Desenvolvedor</h4>
                     <Link href="/sobre">
                         <a style={{fontWeight:"bold"}}>
                             Sobre mim
@@ -27,17 +28,17 @@ export default function Home(props){
             
             <div className="conteudos">
                 <div className="descricao">
-                    <h4>Descrição</h4>
+                    <h4>Características</h4>
                     <p>
                         - Idade: {calculaIdade()} anos<br/>
                         - Estudante do curso de ciencia da computação da <a href="http://www.uff.br/">UFF</a><br/>
                         - 10 meses de trabalho com o framework para desenvolvimento móvel <a href="https://dotnet.microsoft.com/apps/xamarin/xamarin-forms">Xamarin Forms</a> <br/>
                         - {calculaTempoSys()} meses de experiência com o desenvolvimento Outsystems<br/>
-                        - Certificação Rective Developer Web que pode ser conferida <a href="/">Aqui</a>
+                        - Certificação Associate Reactive Developer que pode ser conferida <a href="https://drive.google.com/file/d/1YeHEq5kV-2E6rtBXuqoVNeDr_SziWYaL/view?usp=sharing">aqui</a>
                     </p>
                 </div>
                 <div className="postsContainer">
-                    <h4>Meus Repositórios Favoritos</h4>
+                    <h4>Alguns dos Meus Projetos</h4>
                     {
                         props.repos.map((project)=>{
                             return(

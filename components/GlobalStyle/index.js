@@ -54,26 +54,26 @@ const GlobalStyle = createGlobalStyle`
   .conteudos{
     display: flex;
     margin-bottom: 110px;
-    margin-left: 20px;
+    margin-left: 180px;
   }
   .descricao{
     margin-right: 20px;
   }
   .headerContainer {
     position: relative;
-    margin-left: 35%;
-    display: flex;
+    margin-left: 40%;
     align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     img {
+      margin-left: 100px;
       max-width: 100px;
       border-radius: 100%;
       margin-right: 16px;
     }
-    h1 {
-      margin: 0;
+    a {
+      margin-left: 100px;
     }
   }
   .imagemPerfil{
@@ -89,9 +89,6 @@ const GlobalStyle = createGlobalStyle`
       left: 45%;
       margin-right: 15px;
     }
-  }
-  .lugarVazio{
-    height: 500px;
   }
   .footer{
     align-items: center;
