@@ -35,7 +35,9 @@ export default function Home(props){
                         - Estudante do curso de ciencia da computação da <a href="http://www.uff.br/">UFF</a><br/>
                         - 10 meses de trabalho com o framework para desenvolvimento móvel <a href="https://dotnet.microsoft.com/apps/xamarin/xamarin-forms">Xamarin Forms</a> <br/>
                         - {calculaTempoSys()} meses de experiência com o desenvolvimento Outsystems<br/>
-                        - Certificação Associate Reactive Developer que pode ser conferida <a href="https://drive.google.com/file/d/1YeHEq5kV-2E6rtBXuqoVNeDr_SziWYaL/view?usp=sharing">aqui</a>
+                        - Certificação Associate Reactive Developer que pode ser conferida <a href="https://drive.google.com/file/d/1YeHEq5kV-2E6rtBXuqoVNeDr_SziWYaL/view?usp=sharing">aqui</a><br/>
+                        - Esse site está sendo feito com JavaScript e os frameworks Next JS e React<br/>
+                        - Ele está no github com o nome de SiteIdeia e pode ser acessado ao lado<br/>
                     </p>
                 </div>
                 <div className="postsContainer">
