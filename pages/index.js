@@ -9,6 +9,7 @@ export default function Home(props){
             <Head>
                 <title>Carlos Eduardo Menezes Junior</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/46033513?v=4"/>
             </Head>
             <header className="headerContainer">
                 <img
