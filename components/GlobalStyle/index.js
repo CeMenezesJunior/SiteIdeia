@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: #282a36;
+    margin: auto;
   }
   h1,
   h2,
@@ -37,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
     color: #f8f8f2;
   }
   .postsContainer {
+    margin-left: 40%;
   }
   .postsContainer__post {
     a {
@@ -51,13 +53,9 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 110px;
     margin-left: 20px;
   }
-  .conteudos{
-    display: flex;
-    margin-bottom: 110px;
-    margin-left: 180px;
-  }
+  
   .descricao{
-    margin-right: 20px;
+    margin-left: 30%;
   }
   .headerContainer {
     position: relative;
