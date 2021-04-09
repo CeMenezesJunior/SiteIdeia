@@ -19,7 +19,7 @@ export default function Home(props){
                 <div>
                     <h3>Carlos Eduardo Menezes Junior</h3>
                     <h4 style={{marginLeft:"85px"}}>Desenvolvedor</h4>
-                    <Link href="/blog">
+                    <Link href="/sobre">
                         <a style={{fontWeight:"bold"}}>
                             Sobre mim
                         </a>
