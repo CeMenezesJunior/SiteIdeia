@@ -39,8 +39,14 @@ const GlobalStyle = createGlobalStyle`
   }
   .postsContainer {
     margin-left: 40%;
+    text-align: center;
+    width: 300px;
   }
   .postsContainer__post {
+    border: 3px solid #ffb86c;
+    width: 300px;
+    margin-bottom: 15px;
+    text-align: center;
     a {
       font-weight: bold;
     }

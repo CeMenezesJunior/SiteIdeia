@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import { PrismaClient } from "@prisma/client"
 
 
 export default function Home(props){
@@ -18,7 +19,7 @@ export default function Home(props){
                 <div>
                     <h3>Carlos Eduardo Menezes Junior</h3>
                     <h4 style={{marginLeft:"85px"}}>Desenvolvedor</h4>
-                    <Link href="/blog">
+                    <Link href="/sobre">
                         <a style={{fontWeight:"bold"}}>
                             Sobre mim
                         </a>
@@ -35,12 +36,14 @@ export default function Home(props){
                         props.repos.map((project)=>{
                             return(
                                 <article className="postsContainer__post">
-                                    <a href={"https://github.com/CeMenezesJunior/"+project.repo}>
-                                        {project.repo}
+                                    <a href={project.linkGitHub}>
+                                        {project.titulo}
                                     </a>
+                                    
                                     <p>
-                                        {project.description}
+                                        {project.descricao}<br/>
                                     </p>
+                                    {HasLink(project)}
                                 </article>
                             )
                             })
@@ -53,16 +56,20 @@ export default function Home(props){
     )
 }
 
-
+const prisma = new PrismaClient();
 
 export async function getStaticProps(){
 
-    const repos = await fetch('https://gh-pinned-repos.now.sh/?username=CeMenezesJunior')
-        .then(res=>res.json())
+    const repos = await prisma.repositorio.findMany();
 
     return{
         props: {
             repos,
         }
+    }
+}
+export function HasLink(props){
+    if(props.linkSite){
+        return <a href={props.linkSite}>Clique aqui</a>
     }
 }

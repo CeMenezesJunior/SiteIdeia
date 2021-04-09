@@ -14,4 +14,14 @@ model Post{
   id Int @id @default(autoincrement())
   title String
   except String
+  createAt DateTime @default(now())
+}
+
+model Repositorio{
+  id Int @id @default(autoincrement())
+  titulo String
+  linkGitHub String
+  linkSite String?
+  descricao String
+  
 }
