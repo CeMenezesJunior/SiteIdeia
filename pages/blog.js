@@ -6,10 +6,12 @@ const prisma = new PrismaClient();
 
 export async function getStaticProps(){
     const posts = await prisma.post.findMany();
-
+    for (var i=0;i<posts.length;i++){
+        posts[i].createAt = JSON.parse(JSON.stringify(posts[i].createAt))
+    }
     return{
         props:{
-            posts
+            posts,
         }
     }
 }
