@@ -60,7 +60,7 @@ const prisma = new PrismaClient();
 
 export async function getStaticProps(){
 
-    const repos = await prisma.repositorio.findMany();
+    const repos = await prisma.Repositorio.findMany();
 
     return{
         props: {
