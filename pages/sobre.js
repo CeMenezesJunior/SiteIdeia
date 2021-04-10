@@ -27,7 +27,7 @@ export default function Sobre(){
                         - {calculaTempoSys()} meses de experiência com o desenvolvimento Outsystems<br/>
                         - Certificação Associate Reactive Developer que pode ser conferida <a href="https://drive.google.com/file/d/1YeHEq5kV-2E6rtBXuqoVNeDr_SziWYaL/view?usp=sharing">aqui</a><br/>
                         - Esse site está sendo feito com JavaScript e os frameworks Next JS e React<br/>
-                        - Ele está no github com o nome de SiteIdeia e pode ser acessado ao lado<br/>
+                        - Ele está no github com o nome de SiteIdeia e pode ser na <a href="/">tela principal</a> <br/>
                     </p>
                 </div>
             </div>
