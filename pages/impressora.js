@@ -21,7 +21,7 @@ export default function Impressora(){
                     <h3>Comprar uma nova impressora</h3>
                     <p> 
                         - HP deskjet ink advantage 2376 <br/> R$ 329,00 <br/>
-                        - Tintas 2x54,980 = R$ 109,80 <br/>
+                        - Tintas 2x54,90 = R$ 109,80 <br/>
                     </p>
                     <Link href="https://www.amazon.com.br/IMPRESSORA-DESKJET-INK-ADVANTAGE-2376/dp/B08CM8BB1M">
                         <a>
