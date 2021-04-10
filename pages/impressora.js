@@ -20,7 +20,7 @@ export default function Impressora(){
                     </Link>
                     <h3>Comprar uma nova impressora</h3>
                     <p> 
-                        - HP deskjet ink advantage 2376 <br/> R$ 329,00 <br/>
+                        - HP DeskJet Ink Advantage 2774 Wireless <br/> R$ 419,00 <br/>
                         - Tintas 2x54,90 = R$ 109,80 <br/>
                     </p>
                     <Link href="https://www.amazon.com.br/IMPRESSORA-DESKJET-INK-ADVANTAGE-2376/dp/B08CM8BB1M">
@@ -30,7 +30,7 @@ export default function Impressora(){
                     </Link>
                 </div>              
             </div>
-            <YoutubeEmbed  embedId="dNDthMlbyJo"/>
+            <YoutubeEmbed  embedId="xf_Gn51gmek"/>
         </div>
     )
 }

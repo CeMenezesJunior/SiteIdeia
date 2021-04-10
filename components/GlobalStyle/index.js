@@ -105,6 +105,7 @@ const GlobalStyle = createGlobalStyle`
   .video-responsive{
     overflow: hidden;
     padding-bottom: 40%;
+    
     position: relative;
     height: 0;
   }
@@ -114,6 +115,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100;
     weight: 100%;
     position: absolute;
+    margin-bottom: 40%;
   }
 `;
 
