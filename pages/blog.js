@@ -25,12 +25,17 @@ export default function Blog(props){
                     props.posts.map((postagens)=>{
                         return(
                             <article className="postsContainer__post">
-                                <a href="/blog">
-                                    {postagens.title}
-                                </a>
-                                <p>
-                                    {postagens.except}
-                                </p>
+                                <Link href={`/post/${postagens.id}`} key={postagens.id}>
+                                    <a>
+                                        <h3>
+                                            {postagens.title}
+                                        </h3>
+                                    
+                                        <p>
+                                            {postagens.except}
+                                        </p>
+                                    </a>
+                                </Link>
                             </article>
                         )
                     })
