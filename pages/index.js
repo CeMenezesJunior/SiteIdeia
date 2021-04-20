@@ -58,7 +58,7 @@ export default function Home(props){
 
 const prisma = new PrismaClient();
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
 
     const repos = await prisma.repositorio.findMany();
 
