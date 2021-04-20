@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient;
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
     const postCerto = await prisma.post.findFirst({
         where: {
             id: Number(params.id)
