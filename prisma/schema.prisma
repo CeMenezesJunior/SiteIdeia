@@ -10,18 +10,19 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Post{
-  id Int @id @default(autoincrement())
-  title String
-  except String
+model Post {
+  id       Int      @id @default(autoincrement())
+  title    String
+  except   String
+  text     String?
   createAt DateTime @default(now())
 }
 
-model Repositorio{
-  id Int @id @default(autoincrement())
-  titulo String
+model Repositorio {
+  id         Int     @id @default(autoincrement())
+  titulo     String
   linkGitHub String
-  linkSite String?
-  descricao String
-  
+  linkSite   String?
+  descricao  String
+
 }

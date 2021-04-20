@@ -34,6 +34,9 @@ export default function PostPage(props) {
                         {props.postCerto.title}
                     </h4>
                     <p>
+                        {props.postCerto.text}
+                    </p>
+                    <p>
                         {props.postCerto.except}
                     </p>
                 </div>
