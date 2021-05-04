@@ -24,13 +24,6 @@ export default function Home(props){
                             Sobre mim
                         </a>
                     </Link>
-                    <div style={{marginLeft:"25px",marginTop:"10px"}}>
-                        <Link href="/blog">
-                            <a style={{fontWeight:"bold"}}>
-                                Blog
-                            </a>
-                        </Link>
-                    </div>
                 </div>
                 
             </header>

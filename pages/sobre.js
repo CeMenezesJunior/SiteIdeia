@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import YoutubeEmbed from '../components/YoutubeEmbed/YoutubeEmbed'
 
 export default function Sobre(){
     return(
@@ -28,6 +27,7 @@ export default function Sobre(){
                         - Certificação Associate Reactive Developer que pode ser conferida <a href="https://drive.google.com/file/d/1YeHEq5kV-2E6rtBXuqoVNeDr_SziWYaL/view?usp=sharing">aqui</a><br/>
                         - Esse site está sendo feito com JavaScript e os frameworks Next JS e React<br/>
                         - Ele está no github com o nome de SiteIdeia e pode ser na <a href="/">tela principal</a> <br/>
+                        
                     </p>
                 </div>
             </div>
@@ -35,7 +35,6 @@ export default function Sobre(){
             <p className="biografia">
                 
             </p>
-            
 
         </div>
 
