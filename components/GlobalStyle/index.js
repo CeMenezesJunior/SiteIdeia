@@ -59,9 +59,15 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 110px;
     margin-left: 20px;
   }
-  
+  .botaoPrincipal{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+  }
   .descricao{
-    margin-left: 30%;
+    margin-left: 10%;
   }
   .headerContainer {
     position: relative;
@@ -112,7 +118,7 @@ const GlobalStyle = createGlobalStyle`
   .video-responsive iframe{
     left: 22%;
     top: 0;
-    height: 100;
+    height: 100%;
     weight: 100%;
     position: absolute;
     margin-bottom: 40%;
